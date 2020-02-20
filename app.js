@@ -15,6 +15,10 @@ if (argument !== null) {
         result = FilterLib.filter(value);
     }
 
+    if (option === '--count') {
+        result = FilterLib.count();
+    }
+
     if(result !== null) {
         console.log(JSON.stringify(result, null, 4));
     }

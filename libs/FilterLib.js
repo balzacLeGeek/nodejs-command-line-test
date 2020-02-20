@@ -16,7 +16,7 @@ const FilterLib = (function () {
             })
 
             acc = [...acc, {
-                ville: data.name,
+                name: data.name,
                 people
             }]
 
@@ -30,8 +30,31 @@ const FilterLib = (function () {
         return removedEmptyDatas;
     }
 
+    const count = () => {
+        const updatedDatas = data.map((dataItem) => {
+            let updatedData = [];
+
+            const peopleCount = dataItem.people.length
+
+            dataItem.name += `[${peopleCount}]`
+
+            const people = dataItem.people.map(peopleItem => {
+                const animalCount = peopleItem.animals.length
+
+                peopleItem.name += `[${animalCount}]`
+
+                return peopleItem
+            })
+
+            return dataItem;
+        }, [])
+
+        return updatedDatas;
+    }
+
     return {
         filter,
+        count,
     }
 }())
 
