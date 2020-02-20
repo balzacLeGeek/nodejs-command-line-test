@@ -7,8 +7,6 @@ const argument = ArgumentParserLib.parse(arguments.slice(2))
 if (argument !== null) {
     const { option, value } = argument
 
-    // console.log(`Option: ${ option } - Value: ${ value }`)
-
     let result = null;
 
     if (option === '--filter') {
@@ -21,5 +19,9 @@ if (argument !== null) {
 
     if(result !== null) {
         console.log(JSON.stringify(result, null, 4));
+
+        return true;
     }
 }
+
+console.log('This command option is not supported. Please use --filter=VALUE or --count')
