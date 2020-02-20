@@ -7,7 +7,7 @@ Clone this repo and run the following commands:
 **Filter data containing pattern**
 
 ```bash
-node app.js --filer=YOUR_PATTERN
+node app.js --filter=YOUR_PATTERN
 ```
 
 **Or count People and Animals by adding the count of children in the name**
