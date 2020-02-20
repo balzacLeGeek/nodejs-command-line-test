@@ -21,7 +21,7 @@ const FilterLib = (function () {
             })
 
             acc = [...acc, {
-                name: data.name,
+                name: dataItem.name,
                 people
             }]
 
