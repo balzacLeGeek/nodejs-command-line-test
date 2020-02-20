@@ -1,0 +1,9 @@
+{
+  "name": "NodeJsTest",
+  "version": "1.0.0",
+  "description": "Command-line interface in Node.js",
+  "main": "app.js",
+  "repository": "https://github.com/balzacLeGeek/nodejs-command-line-test",
+  "author": "Niaina Michaël RAZAFIMANDIMBY (balzac le Geek) <michaniainar@gmail.com>",
+  "license": "MIT"
+}
